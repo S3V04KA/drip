@@ -1,0 +1,21 @@
+services:
+  drip-angular:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.drip-site.entryPoints=https"
+      - "traefik.http.routers.drip-site.tls=true"
+      - "traefik.http.routers.drip-site.tls.options=default"
+      - "traefik.http.routers.drip-site.tls.certresolver=letsEncrypt"
+      - "traefik.http.routers.drip-site.rule=Host(`drip.urfubest.ru`)"
+      - "traefik.http.services.drip-site.loadbalancer.server.port=80"
+      - "traefik.docker.network=traefik"
+
+networks:
+  traefik:
+    external: true
