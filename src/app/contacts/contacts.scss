@@ -1,0 +1,41 @@
+.contacts {
+  background-color: #f6f0ec;
+  padding: 0 0;
+}
+
+.contacts-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contacts-title {
+  font-family: 'Unbounded', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #b2041f;
+  margin-bottom: 40px;
+  overflow-wrap: break-word;
+}
+
+.contacts-descr {
+  font-family: 'Unbounded', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2041f;
+  max-width: 560px;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 615px) {
+  .contacts-title {
+    font-size: 42px;
+    margin-bottom: 24px;
+  }
+
+  .contacts-descr {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}

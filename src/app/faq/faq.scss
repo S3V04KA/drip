@@ -1,0 +1,152 @@
+.faq {
+  background-color: #f6f0ec;
+  padding: 0;
+}
+
+.faq-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.faq-header-wrap {
+  padding: 80px 0 40px;
+}
+
+.faq-heading {
+  font-size: clamp(32px, calc(72 / 1200 * 100vw), 72px);
+  line-height: 1.55;
+  font-weight: 400;
+  display: flex;
+  gap: 0;
+}
+
+.faq-heading-normal {
+  font-family: 'Unbounded', Arial, sans-serif;
+}
+
+.faq-heading-accent {
+  font-family: 'BETMO', Arial, sans-serif;
+  font-size: clamp(44px, calc(92 / 1200 * 100vw), 92px);
+  margin-left: 0.15em;
+}
+
+.faq-col {
+  width: 100%;
+  max-width: 66.666%;
+  margin-left: 16.666%;
+}
+
+.faq-accordion {
+  margin-bottom: 2px;
+}
+
+.faq-accordion:last-child {
+  margin-bottom: 0;
+}
+
+.faq-wrapper {
+  background-color: #f6f0ec;
+}
+
+.faq-header {
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-trigger {
+  position: relative;
+  width: 100%;
+  padding: 25px 30px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-title {
+  font-size: 24px;
+  line-height: 1.35;
+  font-family: 'Unbounded', Arial, sans-serif;
+  color: #000000;
+  font-weight: 600;
+  padding-right: 30px;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon--open {
+  transform: rotate(45deg);
+}
+
+.faq-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  padding: 0 30px;
+}
+
+.faq-content--open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.faq-textwrapper {
+  padding: 0 0 20px;
+}
+
+@media (max-width: 615px) {
+  .faq-header-wrap {
+    padding: 40px 0 0px;
+  }
+
+  .faq-heading {
+    flex-wrap: wrap;
+    font-size: 28px;
+  }
+
+  .faq-heading-accent {
+    font-size: 36px;
+  }
+
+  .faq-col {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .faq-title {
+    font-size: 18px;
+  }
+}
+
+.faq-text {
+  font-size: 16px;
+  line-height: 1.55;
+  font-family: 'Unbounded', Arial, sans-serif;
+  color: #b2041f;
+}
+
+@media (max-width: 615px) {
+  .faq-trigger {
+    padding: 25px 0;
+  }
+
+  .faq-content.faq-content {
+    padding: 0;
+  }
+}

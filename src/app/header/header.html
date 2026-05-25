@@ -1,0 +1,63 @@
+<header class="header">
+  <div class="header-inner">
+    <img src="assets/images/__.png.png" alt="ДРИП." class="logo" />
+    <nav class="nav">
+      <a href="#about" class="nav-link" (click)="closeMenu()">Об ивенте</a>
+      <a href="#lectures" class="nav-link" (click)="closeMenu()">Лекции</a>
+      <a href="#team" class="nav-link" (click)="closeMenu()">Наша команда</a>
+      <a href="#partners" class="nav-link" (click)="closeMenu()">Партнеры</a>
+      <a href="#contacts" class="nav-link" (click)="closeMenu()">Контакты</a>
+    </nav>
+    <div class="header-social">
+      <a href="https://www.instagram.com/drip.ekb?igsh=MWJ5cXV0OXFtMzd4dw==" target="_blank" rel="noopener">
+        <img src="assets/images/instagram_1.png.webp" alt="Instagram" />
+      </a>
+      <a href="https://t.me/DRIPekb" target="_blank" rel="noopener">
+        <img src="assets/images/telegram_1.png.webp" alt="Telegram" />
+      </a>
+    </div>
+
+    <button type="button" class="burger-btn" (click)="toggleMenu()" aria-label="Навигационное меню">
+      <div class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
+
+  <div class="mobile-overlay" *ngIf="isMenuOpen" (click)="closeMenu()"></div>
+
+  <div class="mobile-menu" [class.mobile-menu--open]="isMenuOpen">
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">мЕНЮ</span>
+        <button type="button" class="mobile-menu-close" (click)="closeMenu()" aria-label="Close">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 7L7 21M7 7l14 14" stroke="#F6F0EB" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-list">
+        <li><a href="#about" class="mobile-menu-link" (click)="closeMenu()">Об ивенте</a></li>
+        <li><a href="#lectures" class="mobile-menu-link" (click)="closeMenu()">Лекции</a></li>
+        <li><a href="#team" class="mobile-menu-link" (click)="closeMenu()">Команда</a></li>
+        <li><a href="#partners" class="mobile-menu-link" (click)="closeMenu()">Партнеры</a></li>
+        <li><a href="#contacts" class="mobile-menu-link" (click)="closeMenu()">Контакты</a></li>
+      </ul>
+
+      <div class="mobile-menu-footer">
+        <div class="mobile-menu-social">
+          <a href="https://www.instagram.com/drip.ekb?igsh=MWJ5cXV0OXFtMzd4dw==" target="_blank" rel="noopener" aria-label="instagram">
+            <img src="assets/mobile-menu/instagram-icon.png" alt="Instagram" />
+          </a>
+          <a href="https://t.me/DRIPekb" target="_blank" rel="noopener" aria-label="telegram">
+            <img src="assets/mobile-menu/telegram-icon.png" alt="Telegram" />
+          </a>
+        </div>
+        <img src="assets/mobile-menu/logo-drip.svg" alt="ДРИП." class="mobile-menu-logo" />
+      </div>
+    </div>
+  </div>
+</header>

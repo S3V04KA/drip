@@ -1,0 +1,38 @@
+<section class="faq" id="faq">
+  <div class="faq-container">
+    <div class="faq-header-wrap">
+      <h2 class="faq-heading">
+        <span class="faq-heading-normal">Ваши</span>
+        <span class="faq-heading-accent">Вопросы</span>
+      </h2>
+    </div>
+    <div class="faq-col">
+      @for (item of items; track item.question; let i = $index) {
+        <div class="faq-accordion">
+          <div class="faq-wrapper">
+            <div class="faq-header" (click)="toggle(i)">
+              <button type="button" class="faq-trigger" [attr.aria-expanded]="item.open">
+                <span class="faq-title">{{ item.question }}</span>
+                <span class="faq-icon" [class.faq-icon--open]="item.open">
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                      <g transform="translate(1,1)" stroke="#222222">
+                        <path d="M0,11 L22,11"></path>
+                        <path d="M11,0 L11,22"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="faq-content" [class.faq-content--open]="item.open">
+              <div class="faq-textwrapper">
+                <div class="faq-text" [innerHTML]="item.answer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
