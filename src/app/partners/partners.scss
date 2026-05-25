@@ -55,6 +55,28 @@
 
 @media (max-width: 615px) {
   .partners {
-    display: none;
+    padding: 60px 0;
+  }
+
+  .partners-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .partners-title-normal {
+    font-size: 28px;
+  }
+
+  .partners-title-accent {
+    font-size: 36px;
+    display: block;
+    margin-left: 1%;
+  }
+
+  .partners-item {
+    width: 100%;
+    padding: 12px;
   }
 }

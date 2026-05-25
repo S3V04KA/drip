@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header';
 import { HeroComponent } from './hero/hero';
 import { VisionComponent } from './vision/vision';
-import { LecturesComponent } from './lectures/lecture';
+import { LecturesComponent } from './lectures/lectures';
 import { TeamComponent } from './team/team';
 import { FaqComponent } from './faq/faq';
 import { PartnersComponent } from './partners/partners';

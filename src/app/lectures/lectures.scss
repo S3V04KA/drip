@@ -44,6 +44,7 @@
   display: flex;
   gap: 10.17%;
   width: 100%;
+  padding: 0 2em;
 }
 
 .lecture-card {
@@ -119,5 +120,67 @@
 }
 
 @media (max-width: 615px) {
-  
+  .lectures-inner {
+    aspect-ratio: auto;
+    min-height: auto;
+    padding: 60px 20px;
+    box-sizing: border-box;
+  }
+
+  .lectures-heading {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-icon {
+    top: -9%;
+  }
+
+  .card-body {
+    padding: 15% 3.5% 0;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  .card-desc {
+    text-align: center;
+  }
+
+  .lectures-heading-accent {
+    position: relative;
+    left: auto;
+    top: -20%;
+    font-size: 44px;
+  }
+
+  .lectures-heading-normal {
+    position: relative;
+    font-size: 28px;
+  }
+
+  .lectures-cards {
+    position: relative;
+    padding: 0;
+    top: auto;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .lecture-card {
+    flex: 0 0 auto;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .card-visual {
+    aspect-ratio: 3 / 4;
+  }
 }

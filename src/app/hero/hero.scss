@@ -37,25 +37,37 @@
   white-space: nowrap;
 }
 
-.decor {
+.hero-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-decorations img {
   position: absolute;
 }
 
-.decor-1 { top: 41.12%; left: -8.33%; width: 19.67%; }
-.decor-1-2 { top: 15%; right: -3%; width: 19.67%; }
-.decor-6 { top: 25.13%; left: 25.08%; width: 30.33%; }
-.decor-7 { top: 19.67%; left: 64.75%; width: 30.17%; }
-.decor-8 { top: 20.3%; left: 2.42%; width: 19.75%; }
-.decor-9 { top: 49.11%; left: 11.33%; width: 21.83%; }
-.decor-10 { top: 52.16%; left: 45.5%; width: 21.5%; }
-.decor-11 { top: 43.53%; left: 8.92%; width: 9.42%; }
-.decor-12 { top: 52.66%; left: 17%; width: 14.92%; }
-.decor-13 { top: 19.67%; left: 53.08%; width: 24.42%; }
-.decor-14 { top: 67%; left: 35.92%; width: 12.42%; }
-.decor-15 { top: 81.22%; left: 66.08%; width: 9.33%; }
-.decor-16 { top: 79.19%; left: 21.17%; width: 12%; }
-.decor-17 { top: 18.02%; left: 17.67%; width: 5.75%; }
+.hero-decorations .decor-1 { top: 41.12%; left: -8.33%; width: 19.67%; }
+.hero-decorations .decor-2 { top: 15%; right: -3%; width: 19.67%; }
+.hero-decorations .decor-6 { top: 25.13%; left: 25.08%; width: 30.33%; }
+.hero-decorations .decor-7 { top: 19.67%; left: 64.75%; width: 30.17%; }
+.hero-decorations .decor-8 { top: 20.3%; left: 2.42%; width: 19.75%; }
+.hero-decorations .decor-9 { top: 49.11%; left: 11.33%; width: 21.83%; }
+.hero-decorations .decor-10 { top: 52.16%; left: 45.5%; width: 21.5%; }
+.hero-decorations .decor-11 { top: 43.53%; left: 8.92%; width: 9.42%; }
+.hero-decorations .decor-12 { top: 52.66%; left: 17%; width: 14.92%; }
+.hero-decorations .decor-13 { top: 19.67%; left: 53.08%; width: 24.42%; }
+.hero-decorations .decor-14 { top: 67%; left: 35.92%; width: 12.42%; }
+.hero-decorations .decor-15 { top: 81.22%; left: 66.08%; width: 9.33%; }
+.hero-decorations .decor-16 { top: 79.19%; left: 21.17%; width: 12%; }
+.hero-decorations .decor-17 { top: 18.02%; left: 17.67%; width: 5.75%; }
 
 @media (max-width: 615px) {
-  
+  .hero {
+    margin-top: 5rem;
+  }
+
+  .hero-tagline {
+    display: none;
+  }
 }

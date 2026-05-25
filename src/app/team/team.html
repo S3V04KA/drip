@@ -1,13 +1,15 @@
 <section class="team" id="team">
   <div class="team-inner">
     <h2 class="team-heading">
-      <span class="team-heading-accent">Команда</span>
       <span class="team-heading-normal">Наша</span>
+      <span class="team-heading-accent">Команда</span>
     </h2>
-    
-    <img src="assets/images/resized-image.jpeg.webp" alt="" class="decor team-decor-1" />
-    <img src="assets/images/photo.png_009.webp" alt="" class="decor team-decor-3" />
-    <img src="assets/images/photo.png.webp" alt="" class="decor team-decor-2" />
+
+    <div class="team-decorations">
+      <img src="assets/images/resized-image.jpeg.webp" alt="" class="team-decor-1" />
+      <img src="assets/images/photo.png_009.webp" alt="" class="team-decor-3" />
+      <img src="assets/images/photo.png.webp" alt="" class="team-decor-2" />
+    </div>
 
     <div class="team-cards">
       @for (m of members; track m.name; let i = $index) {

@@ -4,6 +4,11 @@
   overflow: hidden;
 }
 
+.team-card-photo-1,
+.team-card-photo-3 {
+  display: none;
+}
+
 .team-inner {
   width: 100%;
   max-width: 1200px;
@@ -38,33 +43,33 @@
   font-weight: 400;
 }
 
-.decor {
+.team-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.team-decorations img {
   position: absolute;
 }
 
-.team-decor-3 {
-  top: 2.37%;
-  right: 1%;
-  width: 19.75%;
-}
-
-.team-decor-1 {
+.team-decorations .team-decor-1 {
   top: 8.99%;
   left: 50%;
   transform: translateX(-50%);
   width: 78.83%;
 }
 
-.team-decor-2 {
+.team-decorations .team-decor-2 {
   top: 45.66%;
   left: 0.71%;
   width: 30.92%;
 }
 
-.team-decor-4 {
-  top: 59.26%;
-  left: 42.46%;
-  width: 17%;
+.team-decorations .team-decor-3 {
+  top: 2.37%;
+  right: 1%;
+  width: 19.75%;
 }
 
 .team-cards {
@@ -72,8 +77,9 @@
   top: 62.12%;
   display: flex;
   justify-content: space-between;
-  width: 80vw;
-  gap: 2em;
+  width: 100%;
+  gap: 24px;
+  padding: 0 2em;
 }
 
 .team-card {
@@ -140,59 +146,78 @@
   font-weight: 400;
 }
 
+.team-card-photo-2 {
+  width: 60%;
+  top: -15%;
+  left: -30%;
+}
+
 @media (max-width: 615px) {
+  .team-inner {
+    aspect-ratio: auto;
+    padding: 60px 20px;
+    box-sizing: border-box;
+  }
+
+  .team-heading {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-heading-normal {
+    position: relative;
+    font-size: 28px;
+  }
+
+  .team-heading-accent {
+    position: relative;
+    top: 6%;
+    left: 2%;
+    font-size: 44px;
+  }
+
+  .team-decorations {
+    display: none;
+  }
+
   .team-cards {
-    position: unset;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    padding-top: 150%;
-    text-align: center;
+    position: relative;
+    top: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .team-card {
+    flex: 0 0 calc(50% - 12px);
+    max-width: 180px;
   }
 
   .team-card-name {
+    font-size: 18px;
     text-align: center;
   }
 
   .team-card-role {
+    font-size: 14px;
     text-align: center;
-    font-size: medium;
   }
 
   .team-card-phone,
   .team-card-tg {
+    font-size: 13px;
     text-align: center;
   }
 
-  .team-card-photo-1 {
-    display: none;
-  }
-
+  .team-card-photo-1,
+  .team-card-photo-2,
   .team-card-photo-3 {
     display: none;
-  }
-
-  .team-card-photo-2 {
-    top: -10%;
-    left: -15%;
-    width: 50%;
-    transform: rotate(-45deg);
-  }
-
-  .team-decor-2 {
-    top: 22%;
-  }
-
-  .team-decor-3 {
-    top: 6%;
-  }
-
-  .team-heading-accent {
-    top: -0.2%;
-  }
-
-  .team-heading {
-    left: 30%;
-    top: 4%;
   }
 }
